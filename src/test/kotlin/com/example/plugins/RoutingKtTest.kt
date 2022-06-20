@@ -19,4 +19,14 @@ class RoutingKtTest {
             println(this.bodyAsText())
         }
     }
+
+    @Test
+    fun testPostUpload() = testApplication {
+        application {
+            configureRouting()
+        }
+        client.post("/upload").apply {
+            TODO("Please write your test here")
+        }
+    }
 }
