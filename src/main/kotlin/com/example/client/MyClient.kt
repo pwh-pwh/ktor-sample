@@ -1,6 +1,7 @@
 package com.example.client
 
 import com.example.entry.ImgUploadRsp
+import com.example.entry.SessionData
 import com.example.utils.PngUtils
 import io.ktor.client.*
 import io.ktor.client.call.*
@@ -49,7 +50,7 @@ class MyClient {
             headers {
                 append("Origin","https://t.bilibili.com")
                 append("Referer","https://t.bilibili.com")
-                append("Cookie","SESSDATA=***")
+                append("Cookie","SESSDATA=${SessionData.sessionData}")
             }
             setBody(
                 MultiPartFormDataContent(

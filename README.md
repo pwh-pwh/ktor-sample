@@ -21,7 +21,7 @@
 > 返回文件流
 #### 注意
 > 改项目仅用于学习ktor,请勿用于非法用途,
-> 默认使用bilibili的图床，修改append("Cookie","SESSDATA=你的sessdata")即可使用,f12查看cookie填入
+> 默认使用bilibili的图床，修改SessionData中sessoionData即可使用或者启动时传入参数eg:java -jar app.jar your_sessiondata,(f12查看cookie填入)
 #### todo_list
 > 提供大文件上传功能(将文件分割成多个节点上传)
 > 使用协程优化
