@@ -44,5 +44,5 @@ dependencies {
 }
 
 application {
-    mainClass.set("com.example.Application")
+    mainClass.set("com.example.ApplicationKt")
 }
