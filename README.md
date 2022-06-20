@@ -6,7 +6,8 @@
 > 上传文件：
 > post localhost:8080/upload  body:form-data file:your_file
 > 返回信息
-> {
+> ```json
+{
 "code": 0,
 "data": {
 "image_height": 51,
@@ -15,6 +16,7 @@
 },
 "message": "success"
 }
+```
 > 下载文件
 > get localhost:8080/data?url=http://i0.hdslb.com/bfs/album/*****.png
 > 返回信息
